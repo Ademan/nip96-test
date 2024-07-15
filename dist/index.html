@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test</title>
+		<base href=".">
+<style>
+</style>
+	</head>
+	<body>
+		<p id="message">Please select a file and press "Upload"</p>
+		<form>
+			<ul style="list-style-type: none; margin-left: 0;">
+				<li>
+					<label for="nsec">nsec: </label><input id="nsec" name="nsec" placeholder="nsec"></input>
+				</li>
+				<li>
+					<label for="nip96-host">NIP-96 Host: </label><input id="nip96-host" name="nip96-host" placeholder="NIP-96 Host" value="https://nostr.build"></input>
+					<h3>Known NIP-96 Hosts</h3>
+					<ul>
+						<li>https://nostr.build</li>
+						<li>https://nostrcheck.me</li>
+						<li>https://files.v0l.io</li>
+					</ul>
+				</li>
+				<li>
+					<input id="file-upload" name="file" type="file"></input>
+				</li>
+				<li>
+					<label for="my-version">Use My Verison: </label>
+					<input id="my-version" name="my-version" type="checkbox"></input>
+				</li>
+				<li>
+					<button id="upload" type="button">Upload</button>
+				</li>
+		</form>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
